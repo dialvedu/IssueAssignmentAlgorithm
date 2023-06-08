@@ -14,3 +14,5 @@ def assign_issues(workers, issues):
                 issues_assigned = min(workers[worker][0], issue)
                 assignment_matrix[worker].append((issues_assigned, i))
                 issue -= issues_assigned
+                
+    return assignment_matrix
